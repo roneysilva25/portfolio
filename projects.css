@@ -1,0 +1,24 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+.homepage {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.span-color {
+    color: #00ADB5;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0 10px;
+}
+
+
+
+
+

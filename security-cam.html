@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Camera</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="homepage" href="https://roneydiego.github.io/portfolio/"><h1>Roney's <span class="span-color">Portfolio</span></h1></a>
+    <h2>Security Camera Project</h2>
+    <div class="section 1">
+        <h3 class="title">What is it?</h2>
+        <p class="description">It's a security camera that provides live video over a local network, accurate person detection system through an object recognition model, remote control options
+        to turn the camera right and left with a range of 180 degrees, and integration with the Telegram API to send notifications of detected people through a Telegram bot.
+        </p>
+        <img class="demo-pic" src="assets/images/camera-demo.png" alt="">
+    </div>
+
+    <div class="section 2">
+        <h3 class="title">How does it work?</h3>
+        <p class="description">It's all running on a Raspberry Pi 3B, it uses a webcam and a servo motor. These are the 3 main physical components.
+        It was all coded in Python 3 making use of the Flask Framework for the webpage and the OpenCV module for the images and the
+        Object Recognition. It uses a pre-trained model downloaded from the Internet, which can be used by a certain method of the opencv
+        module, that passes the image to the Object Recognition model and returns a dictionary of all of the detected objects, this process goes on frame by frame
+        until it finally detects a person, with a considerable percentage of confidence, following to send this exact frame through a Telegram bot using the Telegram API.</p>
+        <img class="demo-pic" src="" alt="">
+    </div>
+</body>
+</html>
