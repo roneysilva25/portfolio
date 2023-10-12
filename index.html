@@ -9,63 +9,92 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>        
-    <a class="homepage" href="https://roneydiego.github.io/portfolio/"><h1>Roney's <span class="span-color">Portfolio</span></h1></a>
-    <h2 class="text-section">My Projects</h2>
-    <div class="div-projects">
-        <div class="project-card security-cam">
-            <div class="img-box cam-img"><img src="assets/images/security-camera.gif" alt="Image of a security camera"></div>  
-            <a href="security-cam.html"><h3 class="project-title">Security Camera</h3></a>
-            <p class="project-description">Security camera with object recognition, webpage for live video and to remotely control  
-            the camera, integration with API to notify detected people.</p>
-            <hr class="division-line">
-            <p class="langs project-description">Python, HTML, CSS.</p>
-        </div>
-
-        <div class="project-card projectile-launcher">
-            <div class="img-box"><img src="assets/images/projectile-launcher.gif" alt="Image of the projectile launcher"></div>  
-            <a href="projectile-launcher.html"><h3 class="project-title">Projectile Launcher</h3></a>
-            <p class="project-description">This is an educational project aiming to help students understand
-            projectile motion, a topic in physics, and also get them interested in 
-            programming, showing how physics can be applied to create a real device.</p>
-            <hr class="division-line">
-            <p class="langs project-description">Python.</p>
-        </div>
-
-        <div class="project-card password-generator">
-            <div class="img-box"><img src="assets/images/password-generator.png" alt="Image of the password generator program"></div>  
-            <a href=""><h3 class="project-title">Password Generator</h3></a>
-            <p class="project-description">Password generator with user login, cryptography and integration with the Firebase Realtime Database to store passwords.</p>
-            <hr class="division-line">
-            <p class="langs project-description">Python, Firebase</p>
-        </div>
-
-        <div class="project-card github-repository">
-            <div class="img-box"><img src="assets/images/github.png" alt="github image"></div>  
-            <a href="https://github.com/roneydiego?tab=repositories"><h3 class="project-title">My github repository</h3></a>
-            <p class="project-description">Here you can find more of my creations
-            and the open code for all of the projects shown 
-            on this website.</p>
-        </div>
-    </div>
-    <h2 class="text-section">About me</h2>
-    <div class="section">
-        <img class="my-picture" src="assets/images/me.jpg" alt="person">
-        <p>Hello! I'm both a Computer Science and Physics student aspiring to be<br>a developer and a researcher! You can find my resume <a href="https://docs.google.com/document/d/1TWvXCWAumJjIcCLrIrrs0b7aiSJ5biY9/edit?usp=sharing&ouid=106867349081316188961&rtpof=true&sd=true">here</a>.</p>
-    </div>
-    <h2 class="text-section">Contact me</h2>
-    <p class="contact-me-text section-description">Phone: +55 79 98179-2520<br>
-    E-mail: roney.diego000@gmail.com<br>
-    Aracaju, Sergipe. Brazil
-    </p>
-
-    <footer>
+<body>
+    <section class="header">
         <div>
-            <a href="https://www.linkedin.com/in/roney-diego-14286a222/">LinkedIn</a>
-            <a href="https://www.instagram.com/r.ydiego/">Instagram</a>
-            <a href="https://github.com/roneydiego">Github</a>
+            <h1><span class="span-color">Roney's</span> Portfolio</h1></a>
+            <p>Back-end developer. Find my latest work and get in touch.</p>
+            <a class="contact-btn" href="mailto:roney.diego000@gmail.com">Contact Me</a>
         </div>
-        2023 | Roney Diego | All rights reserved
-    </footer>
+        <img class="computer-svg" src="assets/images/1478463740.svg" alt="">
+    </section>
+    
+    <section class="projects">
+        <h2 class="title">My Projects</h2>
+        <div class="cards">
+            <div class="card security-cam">
+                <div>
+                    <img class="project-img" src="assets/images/security-camera.gif" alt="Image of a security camera">  
+                    <h3 class="project-title">Security Camera</h3>
+                    <p class="project-description">Security camera with object recognition, webpage for live video and to remotely control  
+                    the camera, integration with the Telegram API to notify detected people.</p>
+                </div>
+                <a class="learn-more" href="security-cam.html">Learn More</a>
+            </div>
+
+            <div class="card projectile-launcher">
+                <div>
+                    <img class="project-img" src="assets/images/projectile-launcher.gif" alt="Image of the projectile launcher">
+                    <h3 class="project-title">Projectile Launcher</h3>
+                    <p class="project-description">This is an educational project aiming to help students understand
+                    projectile motion, a topic in physics, and also get them interested in 
+                    programming, showing how physics can be applied to create a real device.</p>
+                </div>
+                <a class="learn-more" href="projectile-launcher.html">Learn More</a>    
+            </div>
+
+            <div class="card password-generator">
+                <div>
+                    <img class="project-img" src="assets/images/password-generator.png" alt="Image of the password generator program">
+                    <h3 class="project-title">Password Generator</h3>
+                    <p class="project-description">Password generator with user login, cryptography and integration with the Firebase Realtime Database to store passwords.</p>              
+                </div>
+                <a class="learn-more" href="">Learn More</a>
+            </div>
+
+            <div class="card github-repository">
+                <div>
+                    <img class="project-img" src="assets/images/github.png" alt="github image">  
+                    <h3 class="project-title">My github repository</h3>
+                    <p class="project-description">Here you can find more of my creations
+                    and the open code for all of the projects shown 
+                    on this website.</p>
+                </div>
+                <a class="learn-more" href="https://github.com/roneydiego?tab=repositories">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-contact">
+        <div class="content">
+            <h2 class="title">About me</h2>
+            <img class="my-picture" src="assets/images/me.jpg" alt="person">
+            <p>Hello! I'm both a Computer Science and Physics student aspiring to be<br>a developer and a researcher! You can find my resume <a href="https://docs.google.com/document/d/1TWvXCWAumJjIcCLrIrrs0b7aiSJ5biY9/edit?usp=sharing&ouid=106867349081316188961&rtpof=true&sd=true">here</a>.</p>
+        </div>        
+        <div>
+            <h2 class="title">Contact me</h2>
+            <div class="content">
+                <ul class="contact-info">
+                    <li><img class="icon" src="assets/images/5340266_call_cellular_contact_phone_icon.svg" alt="">Phone Number: +55 79 98179-2520</li>
+                    <li><img class="icon" src="assets/images/5340267_e_email_letter_mail_icon.svg" alt="">E-mail: roney.diego000@gmail.com</li>
+                    <li><img class="icon" src="assets/images/5340292_locate_location_map_pin_icon.svg" alt="">Aracaju, Sergipe. Brazil</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <div class="content">
+            <footer>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/roney-diego-14286a222/"><img class="icon" src="assets/images/1820468_brand_linkedin_logo_network_social_icon.svg" alt="">LinkedIn</a>
+                    <a href="https://www.instagram.com/r.ydiego/"><img class="icon" src="assets/images/5340248_ig_instagram_photo_icon.svg" alt="">Instagram</a>
+                    <a href="https://github.com/roneydiego"><img class="icon" src="assets/images/853360_github_icon.svg" alt="">Github</a>
+                </div>
+                Coded by Roney Diego © | 2023
+            </footer>
+        </div>
+    </section>
 </body>
 </html>

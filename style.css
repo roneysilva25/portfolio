@@ -1,133 +1,175 @@
-body {
-    font-family: "Poppins", sans-serif;
+body, .span-color {
     background-color: #222831;
-    color: #EEEEEE;
+    color: #eeeeee;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
 }
 
-.div-projects {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: flex-start; 
-    gap: 50px 0px;
+h1 {
+    font-size: 3rem;
+    color: #00adb5;
 }
 
-.div-projects > * {
-    flex-basis: 400px;
+.header p {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.contact-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 2px solid #00adb5;
+    color: #eeeeee;
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.contact-btn:hover {
+    background-color: #00adb5;
+}
+
+.computer-svg {
+    height: 35rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+section {
+    padding: 5rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.project-title {
+    font-weight:700;
+    font-size: 1.3rem;
+}
+
+.learn-more {
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: #eeeeee4f;
+    width: fit-content;
+    margin-left: 1rem;
+}
+
+.learn-more:hover {
+    background-color: #00adb5;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    background-color: #00adb5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.projects {
+    background-color: #393e46;
+}
+
+.project-title, .learn-more, .project-description {
+    padding: 0 1rem;
+}
+
+.project-img {
+    border-radius: 15px 15px 0 0;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+.content {
+    text-align: center;
+}
+
+.my-picture {
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #eeeeee;
+}
+
+
+.contact-info {
+    list-style: none;
+    text-align: start;
+}
+
+.footer {
+    background-color: #393e46;
 }
 
 a {
-    color: #EEEEEE;
+    color:#00adb5;
 }
 
 .homepage {
     text-decoration: none;
 }
 
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 2% 2% 0 0;
+.icon {
+    height: 25px;
+    margin-right: 10px;
 }
 
-.img-box {
-    width: 400px;
-    height: 200px;   
-}
-
-.my-picture {
-    border-radius: 50%;
-    width: 180px;
-    border: 4px solid;
-}
-
-.section {
+.social-media {
     display: flex;
+    gap: 2rem;
     justify-content: center;
-    gap: 20px;
 }
 
-.section > p {
-    align-self: center;
-}
-
-.division-line{
-    width: 50%;
-    color: #EEEEEE;
-}
-
-.langs {
-    text-align: center;
-}
-
-.project-card {
-    background-color: #00ADB5;
-    border-radius: 2%;
-    box-shadow: 0px 0px 20px black;
-}
-
-@media (max-width:1300px) {
-    .div-projects {
-        flex-direction: column;
-        align-content: center;
-        gap: 50px;
-        height: auto;
+@media (max-width: 1300px){
+    .cards {
+        grid-template-columns: 400px 400px;
     }
 
-    .div-projects > div {
-        width: 80vw;
+    .header {
+        grid-template-columns: 400px;
     }
 
-    .img-box {
-        width: 80vw;
-        height: 40vw;
+    .computer-svg {
+        width: 70vw;
+        justify-self: center;
+    }
+
+    .header div {
+        width: 70vw;
+        justify-self: center;
     }
 }
 
-.langs {
-    font-size: 0.75rem;
-}
-
-.project-description {
-    padding: 0 40px 40px 40px;
-}
-
-.project-title {
-    padding-left: 40px;
-}
-
-.text-section {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-top: 100px;
-}
-
-h1 {
-    font-size: 3rem;
-    margin: 0 10px;
-}
-
-.span-color {
-    color: #00ADB5;
-}
-
-.section-description {
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 5%;
-    background-color: #393E46;
-}
-
-footer > div {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contact-me-text {
-    margin-bottom: 100px;
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 400px;
+    }
 }
