@@ -13,7 +13,6 @@ h1 {
 .header p {
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
-
 }
 
 .contact-btn {
@@ -155,6 +154,7 @@ a {
 
     .header {
         grid-template-columns: 400px;
+        gap: 1rem;
     }
 
     .computer-svg {
@@ -168,8 +168,20 @@ a {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .cards {
-        grid-template-columns: 400px;
+        grid-template-columns: 80vw;
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+    .project-img {
+        width: 80vw;
+    }
+
+    section {
+        padding: 1rem;
     }
 }
