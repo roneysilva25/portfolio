@@ -33,6 +33,12 @@ h1 {
     height: 35rem;
 }
 
+.credits-computer-svg {
+    color: #eeeeee;
+    font-size: smaller;
+    text-decoration: none;
+}
+
 .header {
     display: grid;
     grid-template-columns: 500px 500px;
