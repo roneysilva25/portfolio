@@ -192,3 +192,51 @@ a {
         padding: 1rem;
     }
 }
+
+
+.tech-used {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 1rem;
+}
+
+.colored-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.yellow {
+    background-color: rgb(255, 255, 166);
+}
+
+.green {
+    background-color: rgb(167, 255, 167);
+}
+
+.blue {
+    background-color: rgb(105, 133, 255);
+}
+
+.cyan {
+    background-color: rgb(163, 255, 255);
+}
+
+.orange {
+    background-color: orange;
+}
+
+.light-blue {
+    background-color: lightblue;
+}
+
+.dark-yellow {
+    background-color: darkgoldenrod;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
